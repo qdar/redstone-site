@@ -1,0 +1,63 @@
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+    overflow: inherit;
+    margin-top: 120px;
+  }
+
+  &::after {
+    content: 'Team';
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 148px;
+    position: absolute;
+    left: 0;
+    bottom: 40.5%;
+    opacity: 0.15;
+    z-index: -1;
+
+    @include laptop {
+      font-size: 36em;
+      bottom: 72%;
+      left: -10%;
+    }
+
+    @include desktop {
+      font-size: 48em;
+      bottom: 65%;
+      left: -20%;
+    }
+  }
+
+  @include mobile-only {
+    &__item:first-child,
+    &__item:nth-child(2) {
+      color: $white;
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    @include laptop {
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 160%;
+  }
+}

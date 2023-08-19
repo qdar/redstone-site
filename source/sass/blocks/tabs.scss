@@ -1,0 +1,43 @@
+.tabs {
+
+  &__controls {
+    display: flex;
+    gap: 20px;
+    overflow-y: scroll;
+
+    @include laptop {
+      display: inline-flex;
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__control {
+    font-size: 18px;
+    padding: 8px 15px;
+    flex-shrink: 0;
+    height: 45px;
+    cursor: pointer;
+    transition: $transition;
+
+    @include laptop {
+      padding: 10px 30px;
+      height: 60px;
+    }
+  }
+
+  &__control.is-active {
+    color: $white;
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+
+  &__element {
+    display: none;
+  }
+
+  &__element.is-active {
+    display: block;
+  }
+}

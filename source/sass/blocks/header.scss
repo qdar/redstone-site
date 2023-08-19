@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  transition: $transition;
+
+  &--sticky {
+    background-color: rgba(37, 36, 36, 0.75);
+  }
+
+  &--sticky &__container {
+    height: 60px;
+  }
+
+  &__container {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15px;
+    transition: $transition;
+
+    @include laptop {
+      height: 100px;
+      margin: 0 30px;
+    }
+  }
+
+  &__lang {
+    position: relative;
+
+    @include laptop {
+      display: none;
+    }
+
+    & .lang {
+      position: absolute;
+      box-sizing: border-box;
+      top: -2px;
+      right: 52px;
+    }
+  }
+}

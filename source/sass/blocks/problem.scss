@@ -1,0 +1,73 @@
+.problem {
+  background-color: $bg-color;
+
+  @include laptop {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+
+  @include mobile-tablet-only {
+    &__image {
+        overflow: hidden;
+        width: 100%;
+        height: 142px;
+
+      & img {
+        margin-top: -90px;
+      }
+    }
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 15px;
+    color: $accent-color;
+    font-size: 20px;
+    font-weight: 400;
+
+    @include laptop {
+      font-size: 24px;
+    }
+  }
+
+  &__content {
+    color: $gray;
+    box-sizing: border-box;
+    padding: 20px 20px 70px 20px;
+    border: 1px solid rgba(211, 211, 211, 0.25);
+    border-top: 1px solid transparent;
+
+    @include laptop {
+      padding: 20px;
+      border-left: 1px solid transparent;
+      border-top: 1px solid rgba(211, 211, 211, 0.25);
+    }
+  }
+
+  &__label {
+    padding-left: 24px;
+    margin: 0;
+    margin-bottom: 6px;
+    position: relative;
+    font-weight: 600;
+  }
+
+  &__label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 0;
+    background-image: url(../img/problem-label.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__text {
+    max-width: 368px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+  }
+}

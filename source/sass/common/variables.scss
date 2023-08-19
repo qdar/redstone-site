@@ -1,0 +1,24 @@
+$white: #ffffff;
+$gray: #d3d3d3;
+$bg-color: #252424;
+$bace-color: #36322F;
+$accent-color: #e54141;
+$accent-red: #ea6767;
+
+$hover-color: rgb(37, 37, 37, 90%);
+$active-color: rgb(37, 37, 37, 75%);
+
+$padding-mobile: 60px;
+$padding-pc: 150px;
+
+$transition: all 0.4s;
+
+
+@mixin title {
+  font-family: 'Oxygen', 'Tahoma', serif;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin: 0;
+}

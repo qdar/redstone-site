@@ -1,0 +1,51 @@
+.lang {
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 56px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: $transition;
+
+  &:hover {
+    background: $bg-color;
+    border: 1px solid #505050;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:first-child::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 0;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    transition: $transition;
+  }
+
+  &:hover &__item:first-child::after {
+    transform: rotate(180deg);
+  }
+
+  &__item:last-child {
+    display: none;
+  }
+
+  &:hover &__item:last-child {
+    display: block;
+  }
+
+  &__link {
+    color: $white;
+  }
+
+  &__link:hover {
+    color: $gray;
+  }
+}

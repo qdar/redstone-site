@@ -1,0 +1,24 @@
+.container {
+  padding: 0 15px;
+
+  @include laptop {
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+
+  @include desktop {
+    min-width: 1512px;
+  }
+
+  &--wide {
+    padding: 0 12px;
+
+    @include laptop {
+      min-width: 1380px;
+    }
+
+    @include desktop {
+      min-width: 1760px;
+    }
+  }
+}

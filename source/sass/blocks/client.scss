@@ -1,0 +1,161 @@
+.client {
+
+  &__name {
+    color: $white;
+    font-size: 28px;
+    @include title;
+
+    @include laptop {
+      font-size: 36px;
+    }
+  }
+
+  &__label {
+    color: #b6b6b6;
+    background-color: #3c3b3b;
+    font-size: 14px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 34px;
+  }
+
+  &__data {
+
+    @include laptop {
+      display: flex;
+      margin-bottom: 36px;
+      gap: 16px;
+    }
+  }
+
+  &__data-text {
+    color: $gray;
+    font-size: 15px;
+    margin: 10px 0;
+
+    @include laptop {
+      font-size: 16px;
+    }
+  }
+
+  &__data-text--mobile {
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__content {
+    color: $gray;
+    font-size: 15px;
+
+    @include laptop {
+      font-size: 16px;
+    }
+  }
+
+  &__content--mobile {
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &-hide {
+    display: none;
+
+    @include laptop {
+      display: block;
+    }
+  }
+
+  &__box {
+    color: $gray;
+    background-color: #e7e7e7;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    @include laptop {
+      font-size: 16px;
+      padding: 25px 20px;
+      margin-bottom: 46px;
+      border-radius: 4px;
+      background-image: url(../img/bg-box@2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 90%;
+    }
+  }
+
+  &__subheading {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+
+    @include laptop {
+      font-size: 20px;
+    }
+  }
+
+  &__box .client__subheading {
+    margin-top: 0;
+  }
+
+  &__article {
+
+    @include laptop {
+      display: grid;
+      grid-template-columns: 7.5fr 5fr;
+      gap: 96px;
+    }
+  }
+
+  &__extended {
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: $accent-color;
+    position: relative;
+    padding-right: 30px;
+    cursor: pointer;
+  }
+
+  &__logotype {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include laptop {
+      align-items: flex-start;
+    }
+  }
+
+  &__article--modal {
+    padding: 15px;
+  }
+
+  &__article--modal .client__subheading,
+  &__article--modal .client__content,
+  &__article--modal .client__data-text,
+  &__article--modal .client__name,
+  &__aside .client__content,
+  &__aside .client__subheading,
+  &__aside .client__box {
+    color: $bace-color;
+  }
+
+  &__article--modal .client__label {
+    color: $bace-color;
+    background-color: $white;
+    border: 1px solid rgba(211, 211, 211, 0.85);
+  }
+
+  &__aside .client__content {
+    padding: 0 15px;
+  }
+}

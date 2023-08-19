@@ -1,0 +1,77 @@
+.contact {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  @include laptop {
+    background-image: url(../img/map-desktop.jpg);
+    padding-top: $padding-pc;
+    padding-bottom: 200px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 190px);
+    width: 380px;
+    height: 380px;
+    background-image: url(../img/marker.svg);
+    background-repeat: no-repeat;
+
+    @include laptop {
+      top: 30%;
+      left: calc(65% - 190px);
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 40px;
+    @include title;
+    margin-bottom: 200px;
+
+    @include laptop {
+      font-size: 80px;
+      line-height: 91%;
+      letter-spacing: 3.2px;
+      margin-bottom: 96px;
+    }
+  }
+
+  &__information {
+    color: $white;
+    font-size: 20px;
+    padding: 20px;
+    background: rgba(31, 28, 28, 0.45);
+    backdrop-filter: blur(29px);
+    max-width: 518px;
+
+    @include laptop {
+      padding: 50px 35px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 15px;
+
+    @include laptop {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    color: $white;
+  }
+
+  &__link--accent {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+}

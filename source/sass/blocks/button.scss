@@ -1,0 +1,64 @@
+.button {
+  color: $white;
+  background-color: $accent-color;
+  backdrop-filter: blur(16px);
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transition;
+
+  @include laptop {
+    max-width: 372px;
+    height: 136px;
+  }
+
+  &--primary {
+    color: $accent-color;
+    background-color: $white;
+  }
+
+  &--secondary {
+    color: $accent-color;
+    background-color: $white;
+
+    @include mobile-tablet-only {
+      justify-content: start;
+      height: auto;
+    }
+
+    @include laptop {
+      border: 1px solid $accent-color;
+    }
+  }
+
+  &:hover {
+    background: #F83535;
+  }
+
+  &:active {
+    background: $accent-color;
+  }
+
+  &--primary:hover {
+    background: #FFE9E9;
+  }
+
+  &--primary:active {
+    background: $white;
+  }
+
+  &--secondary:hover {
+    background-color: $white;
+    border: 1px solid #F83535;
+  }
+
+  &--secondary:active {
+    background: $white;
+    border: 1px solid $accent-color;
+  }
+}

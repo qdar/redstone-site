@@ -1,0 +1,114 @@
+.company {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+
+  @include laptop {
+    padding-top: $padding-pc;
+    padding-bottom: $padding-pc;
+  }
+
+  &__list {
+    display: grid;
+    gap: 20px;
+
+    @include laptop {
+      gap: 75px;
+    }
+  }
+
+  &__item {
+    color: $white;
+    font-family: 'Oxygen', 'Tahoma', serif;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 1.16px;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 40px;
+    }
+
+    @include laptop {
+      font-size: 80px;
+      letter-spacing: 3.2px;
+    }
+  }
+
+  &__item span {
+    padding: 0 20px;
+    position: relative;
+    display: inline-block;
+
+    @include laptop {
+      padding: 0 60px;
+    }
+  }
+
+  &__item span::after,
+  &__item span::before {
+    content: '';
+    width: 11px;
+    height: 21px;
+    background-image: url(../img/arrow-company.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 8px;
+
+    @include laptop {
+      width: 28px;
+      height: 52px;
+      top: 26px;
+    }
+  }
+
+  &__item span::after {
+    right: 0;
+  }
+
+  &__item span::before {
+    left: 0;
+  }
+
+  &__item--accent {
+    color: $accent-color;
+  }
+
+  &__item--accent span::before {
+    background-image: url(../img/arrow-company-red.svg);
+  }
+
+}
+
+.company__item:nth-child(2) {
+  margin-left: 15%;
+
+  @include tablet {
+    margin-left: 20%;
+  }
+}
+
+.company__item:nth-child(3) {
+  @include tablet {
+    display: grid;
+    justify-content: end;
+  }
+}
+
+.company__item:first-child span {
+  padding-left: 0;
+
+  &::before {
+    display: none;
+  }
+}
+
+.company__item:last-child span {
+  padding-right: 0;
+
+  &::after {
+    display: none;
+  }
+}
+
+

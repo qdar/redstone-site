@@ -1,0 +1,78 @@
+.navigation {
+  color: $white;
+
+  @include laptop {
+    display: flex;
+    gap: 80px;
+  }
+
+  @include desktop {
+    gap: 200px;
+  }
+
+  &__lang {
+    padding: 35px 25px;
+    position: relative;
+
+    @include laptop {
+      order: 2;
+      padding: 0;
+    }
+
+    & .lang {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+
+      @include laptop {
+        top: -8px;
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+
+  &__menu {
+    padding: 30px 25px;
+    border-top: 1px solid $accent-red;
+    border-bottom: 1px solid $accent-red;
+
+    @include laptop {
+      padding: 0;
+      border-top: 0;
+      border-bottom: 0;
+      margin-right: 140px;
+    }
+
+    @include laptop {
+      margin-right: 200px;
+    }
+  }
+
+  &__contact {
+    display: block;
+    padding: 30px 25px;
+    border-bottom: 1px solid $accent-red;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__address {
+    padding: 30px 25px;
+    border-bottom: 1px solid $accent-red;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__copyright {
+    padding: 30px 25px;
+
+    @include laptop {
+      display: none;
+    }
+  }
+}

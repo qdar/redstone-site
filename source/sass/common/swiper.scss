@@ -1,0 +1,49 @@
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgb(217 217 217 / 10%);
+  width: 69px;
+  height: 46px;
+  border-radius: 32px;
+  transition: $transition;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(193 193 193 / 20%);
+}
+
+.swiper-button-prev {
+  right: 100px;
+  left: auto;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 16px;
+  color: #c1c1c1;
+}
+
+.swiper-pagination-bullets {
+  bottom: 0!important;
+}
+
+.swiper-wrapper {
+  padding-bottom: 36px;
+  // width: calc(50% + 50vw);
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: $gray;
+  margin: 0 10px!important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 53px;
+  background-color: $accent-color;
+  border-radius: 10px;
+}
+
+.swiper-grid-column>.swiper-wrapper {
+  flex-direction: row!important;
+}

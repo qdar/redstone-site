@@ -1,0 +1,12 @@
+.slider {
+
+  @include laptop {
+    margin: 0 auto;
+    max-width: 1320px;
+    overflow: initial;
+  }
+
+  @include desktop {
+    min-width: 1512px
+  }
+}

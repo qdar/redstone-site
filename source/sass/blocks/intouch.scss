@@ -1,0 +1,130 @@
+.intouch {
+  background-color: $accent-color;
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+  position: relative;
+
+  @include laptop {
+    padding-top: $padding-pc;
+    padding-bottom: $padding-pc;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg-intouch-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+
+    @include laptop {
+      background-size: contain;
+      background-image: url(../img/bg-intouch.svg);
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 40px;
+    @include title;
+    margin-bottom: 22px;
+
+    @include laptop {
+      font-size: 80px;
+      line-height: 91%;
+      letter-spacing: 3.2px;
+      margin-bottom: 92px;
+    }
+  }
+
+  &__textarea {
+    min-height: 205px;
+    margin-top: 15px;
+    padding-top: 16px;
+
+    @include laptop {
+      margin-top: 0;
+      height: 100%;
+      padding-top: 28px;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__inputs {
+    @include laptop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__inputs-group {
+    display: grid;
+    gap: 15px;
+
+    @include laptop {
+      gap: 30px;
+    }
+  }
+
+  &__buttons {
+    @include laptop {
+      margin-top: 64px;
+      display: flex;
+      align-items: center;
+      gap: 44px;
+    }
+  }
+
+  &__button {
+    @include laptop {
+      order: -1;
+    }
+  }
+}
+
+.policy {
+  color: $white;
+  font-size: 15px;
+  position: relative;
+  display: flex;
+
+  & input {
+    margin: 0;
+    visibility: hidden;
+  }
+
+  & input::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    background-image: url(../img/checkbox.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    visibility: initial;
+  }
+
+  & input:checked::before {
+    background-image: url(../img/checked.svg);
+  }
+
+  & span {
+    display: block;
+    padding-left: 26px;
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: underline;
+  }
+}
