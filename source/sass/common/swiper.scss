@@ -1,6 +1,6 @@
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: rgb(217 217 217 / 10%);
+  background-color: rgba(217, 217, 217, 0.1);
   width: 69px;
   height: 46px;
   border-radius: 32px;
@@ -9,7 +9,7 @@
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: rgba(193 193 193 / 20%);
+  background-color: rgba(217, 217, 217, 0.25);
 }
 
 .swiper-button-prev {
@@ -21,6 +21,11 @@
 .swiper-button-next:after {
   font-size: 16px;
   color: #c1c1c1;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  color: $accent-color;
 }
 
 .swiper-pagination-bullets {

@@ -4,11 +4,13 @@
 
   &__link {
     color: $white;
+    font-weight: 400;
     transition: $transition;
   }
 
   &__link:hover {
-    opacity: 0.8;
+    color: $accent-color;
+    text-decoration: underline;
   }
 
   @include laptop {

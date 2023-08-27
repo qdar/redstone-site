@@ -1,47 +1,15 @@
 .team {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px 30px;
-  margin-top: 60px;
+  color: $bace-color;
   position: relative;
-  overflow: hidden;
 
   @include tablet {
-    grid-template-columns: repeat(4, 1fr);
-    overflow: inherit;
     margin-top: 120px;
   }
 
-  &::after {
-    content: 'Team';
-    color: $white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 148px;
-    position: absolute;
-    left: 0;
-    bottom: 40.5%;
-    opacity: 0.15;
-    z-index: -1;
-
-    @include laptop {
-      font-size: 36em;
-      bottom: 72%;
-      left: -10%;
-    }
-
-    @include desktop {
-      font-size: 48em;
-      bottom: 65%;
-      left: -20%;
-    }
-  }
-
-  @include mobile-only {
-    &__item:first-child,
-    &__item:nth-child(2) {
-      color: $white;
-    }
+  @include laptop {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   &__name {
@@ -52,11 +20,23 @@
     margin-bottom: 10px;
 
     @include laptop {
+      margin-top: 34px;
       font-size: 24px;
     }
   }
 
+  &__post {
+    display: block;
+    margin-bottom: 12px;
+    color: #606060;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 0.525px;
+    text-transform: uppercase;
+  }
+
   &__description {
+    display: block;
     font-size: 16px;
     line-height: 160%;
   }

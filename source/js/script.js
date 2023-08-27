@@ -28,29 +28,6 @@ function myFunction() {
   }
 }
 
-const swiper = new Swiper('.partners__slider', {
-  slidesPerView: 1,
-  spaceBetween: 15,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 60,
-    },
-    1280: {
-      slidesPerView: 5,
-      spaceBetween: 60,
-    },
-  },
-});
-
 const swiperSolutions = new Swiper('.solutions__slider', {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -128,6 +105,33 @@ const swiperIndustries = new Swiper('.industries__slider', {
 
 });
 
+if (document.documentElement.clientWidth < 1024) {
+  const swiperTeam = new Swiper('.about__slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  const swiper = new Swiper('.partners__slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
 
 function onEntry(entry) {
   entry.forEach(change => {
@@ -144,3 +148,14 @@ let elements = document.querySelectorAll('.animation');
 for (let elm of elements) {
   observer.observe(elm);
 }
+
+
+if (document.documentElement.clientWidth < 1024) {
+  const allTexts = document.querySelectorAll('.client__text');
+  allTexts.forEach(item => {
+    item.textContent = (item.textContent).slice(0, 180) + '...';
+  })
+}
+
+
+console.log(document.documentElement.clientWidth);

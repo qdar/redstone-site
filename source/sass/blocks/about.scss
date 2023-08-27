@@ -1,10 +1,14 @@
 .about {
+  color: $white;
   padding-top: $padding-mobile;
   background-color: $accent-color;
+  font-size: 15px;
+  line-height: 160%;
   position: relative;
   z-index: 1;
 
   @include laptop {
+    font-size: 20px;
     padding-top: $padding-pc;
     overflow: hidden;
   }
@@ -15,16 +19,60 @@
     left: 0;
     bottom: -1px;
     width: 100%;
-    height: 540px;
+    height: 780px;
     background-color: $white;
     z-index: -1;
 
-    @include tablet {
-      height: 700px;
+    @include laptop {
+      height: 500px;
+    }
+  }
+
+  &::before {
+    @include laptop {
+      content: 'team';
+      color: transparent;
+      text-transform: uppercase;
+      font-size: 160vh;
+      font-weight: 600;
+      text-stroke: 1px;
+      -webkit-text-stroke: 1px #fff;
+      position: absolute;
+      left: -5%;
+      bottom: 330px;
+      z-index: -1;
+      opacity: 0.5;
     }
 
+    @include desktop {
+      bottom: 300px;
+    }
+  }
+
+  &__header {
     @include laptop {
-      height: 410px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+
+    @include laptop {
+      font-size: 30px;
+      margin-top: 20px;
+      justify-self: self-end;
+    }
+  }
+
+  &__link {
+    display: none;
+
+    @include laptop {
+      display: grid;
+      margin-top: 50px;
+      justify-self: self-end;
     }
   }
 
@@ -36,17 +84,13 @@
 
     @include laptop {
       font-size: 80px;
-      line-height: 91%;
+      line-height: 120%;
       letter-spacing: 3.2px;
-      margin-bottom: 80px;
+      margin-bottom: 70px;
     }
   }
 
   &__content {
-    color: $white;
-    font-size: 15px;
-    line-height: 160%;
-
     @include laptop {
       font-size: 20px;
       display: grid;
@@ -62,5 +106,64 @@
 
   &__content p {
     margin-bottom: 0;
+  }
+
+  &__list {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: grid;
+    gap: 20px;
+
+    @include laptop {
+      margin-top: 0;
+      margin-bottom: 150px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+  }
+
+  &__list p {
+    margin: 0;
+  }
+
+  &__result {
+    font-family: 'Oxygen', 'Tahoma', serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+
+    @include laptop {
+      font-size: 60px;
+    }
+
+    @include desktop {
+      font-size: 80px;
+    }
+  }
+
+  &__result sup {
+    font-size: 18px;
+    margin-left: 15px;
+    position: absolute;
+    top: 10px;
+
+    @include laptop {
+      font-size: 24px;
+    }
+
+    @include desktop {
+      font-size: 30px;
+    }
+  }
+
+  &__slider {
+    margin-left: 15px;
+    padding-right: 130px;
+    margin-top: 60px;
+
+    @include laptop {
+      padding-right: 0;
+    }
   }
 }
