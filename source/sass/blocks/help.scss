@@ -1,0 +1,79 @@
+.help {
+  background-color: $white;
+
+  &__box {
+    position: relative;
+    z-index: 0;
+    background-color: $accent-color;
+    padding: 60px 20px;
+    overflow: hidden;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include laptop {
+      padding: 90px;
+      min-height: auto;
+    }
+
+    &::after {
+      content: '';
+      background-image: url(../img/bg-helpus.svg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: .3;
+      z-index: -2;
+    }
+
+    &::before {
+      content: '';
+      background-image: url(../img/help-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 417px;
+      height: 375px;
+      position: absolute;
+      right: 30px;
+      top: -110px;
+      z-index: -1;
+
+      @include laptop {
+        background-image: url(../img/help.svg);
+        width: 600px;
+        height: 590px;
+        right: 60px;
+        top: -100px;
+      }
+
+      @include desktop {
+        width: 870px;
+        height: 855px;
+        top: -180px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 36px;
+    color: $white;
+    font-family: Oxygen;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    @include laptop {
+      font-size: 60px;
+      margin-bottom: 60px;
+      letter-spacing: 2.4px;
+    }
+  }
+}

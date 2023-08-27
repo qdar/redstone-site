@@ -1,10 +1,10 @@
 .partners {
   overflow: hidden;
   background-color: $white;
-  padding-top: $padding-mobile;
+  padding: $padding-mobile 0;
 
   @include laptop {
-    padding-top: $padding-pc;
+    padding: $padding-pc 0;
   }
 
   &__title {
