@@ -1,6 +1,5 @@
 .contact {
-  padding-top: $padding-mobile;
-  padding-bottom: $padding-mobile;
+  padding: $padding-mobile 0;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -38,7 +37,6 @@
 
     @include laptop {
       font-size: 80px;
-      line-height: 91%;
       letter-spacing: 3.2px;
       margin-bottom: 96px;
     }
@@ -47,10 +45,10 @@
   &__information {
     color: $white;
     font-size: 20px;
-    padding: 20px;
+    padding: 32px 16px;
     background: rgba(31, 28, 28, 0.45);
     backdrop-filter: blur(29px);
-    max-width: 518px;
+    max-width: 445px;
 
     @include laptop {
       padding: 50px 35px;
@@ -59,10 +57,14 @@
 
   &__list {
     display: grid;
-    gap: 15px;
+    gap: 10px;
+  }
+
+  &__item--address {
+    margin-bottom: 20px;
 
     @include laptop {
-      gap: 40px;
+      margin-bottom: 30px;
     }
   }
 
@@ -73,5 +75,31 @@
   &__link--accent {
     color: $accent-color;
     text-decoration: underline;
+  }
+
+  &__pdf {
+    color: #8e8e8e;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+
+    @include laptop {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    &::before {
+      content: '';
+      background-image: url(../img/pdf.svg);
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 0;
+    }
   }
 }
