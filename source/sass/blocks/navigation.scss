@@ -60,8 +60,9 @@
   }
 
   &__address {
-    padding: 30px 25px;
-    border-bottom: 1px solid $accent-red;
+    font-weight: 600;
+    padding: 0px 25px;
+    margin-top: 40px;
 
     @include laptop {
       display: none;
@@ -70,7 +71,9 @@
 
   &__copyright {
     padding: 30px 25px;
+  }
 
+  &__copyright.copyright {
     @include laptop {
       display: none;
     }

@@ -24,13 +24,6 @@
     }
   }
 
-  &__copyright {
-    @include laptop {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
   &__address dl {
     display: flex;
   }

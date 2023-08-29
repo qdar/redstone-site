@@ -1,6 +1,9 @@
 .copyright {
   color: $white;
   font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
 
   &__link {
     color: $white;
