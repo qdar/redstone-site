@@ -6,35 +6,77 @@
   @include laptop {
     padding-top: 78px;
     padding-bottom: 35px;
+    border-top: 0 solid $accent-red;
   }
 
   &__container {
-    @include mobile-tablet-only {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
+    display: flex;
+    justify-content: space-between;
 
-  &__content {
     @include laptop {
-      margin-bottom: 86px;
-      display: flex;
-      justify-content: space-between;
       align-items: flex-start;
     }
   }
 
-  &__address dl {
-    display: flex;
+  &__address {
+    color: $white;
+    font-size: 20px;
+    font-weight: 400;
+    display: grid;
+
+    @include desktop {
+      width: 380px;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__menu {
+    display: none;
+
+    @include laptop {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    transition: $transition;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    color: $white;
+    font-size: 15px;
+
+    @include laptop {
+      display: none;
+    }
   }
 }
 
 @include mobile-tablet-only {
-  .footer .copyright .copyright__item:first-child,
   .footer__list,
-  .footer__address {
+  .footer__address,
+  .last-footer {
     display: none;
   }
 
 }
 
+.last-footer {
+  border-top: 1px solid $accent-red;
+  background-color: $accent-color;
+  padding: 24px 0 28px;
+}

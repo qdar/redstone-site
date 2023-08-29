@@ -13,7 +13,7 @@
   transition: $transition;
 
   @include laptop {
-    max-width: 372px;
+    max-width: 300px;
     height: 136px;
   }
 
@@ -38,6 +38,8 @@
 
   &:hover {
     background: #F82A2A;
+    max-width: 372px;
+    height: 162px;
   }
 
   &:active {

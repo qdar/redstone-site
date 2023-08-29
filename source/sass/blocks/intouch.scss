@@ -1,12 +1,10 @@
 .intouch {
   background-color: $accent-color;
-  padding-top: $padding-mobile;
-  padding-bottom: $padding-mobile;
+  padding: $padding-mobile 0;
   position: relative;
 
   @include laptop {
-    padding-top: $padding-pc;
-    padding-bottom: $padding-pc;
+    padding: $padding-pc 0;
   }
 
   &::before {
@@ -35,7 +33,6 @@
 
     @include laptop {
       font-size: 80px;
-      line-height: 91%;
       letter-spacing: 3.2px;
       margin-bottom: 92px;
     }
@@ -88,6 +85,7 @@
   &__button {
     @include laptop {
       order: -1;
+      max-width: 372px;
     }
   }
 }
