@@ -37,7 +37,6 @@
 
     @include laptop {
       font-size: 80px;
-      line-height: 91%;
       letter-spacing: 3.2px;
       margin-bottom: 96px;
     }
@@ -120,7 +119,7 @@
 
     @include laptop {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
     }
   }
 }

@@ -50,6 +50,25 @@ const swiperSolutions = new Swiper('.solutions__slider', {
   },
 });
 
+const swiperUse = new Swiper('.how-to-use__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+  },
+});
+
 const swiperCredentials = new Swiper('.credentials__slider', {
   slidesPerView: 1,
   spaceBetween: 0,

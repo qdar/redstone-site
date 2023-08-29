@@ -1,0 +1,144 @@
+.how-to-use {
+  margin-top: 40px;
+  overflow: hidden;
+
+  @include laptop {
+    margin-top: 70px;
+  }
+
+  &__title {
+    font-size: 30px;
+    @include title;
+    margin-bottom: 30px;
+
+    @include laptop {
+      font-size: 40px;
+      margin-bottom: 46px;
+    }
+  }
+
+  &__slider {
+    margin-left: 15px;
+    padding-right: 60px;
+
+    @include laptop {
+      padding-right: 0;
+    }
+  }
+
+  &__list {
+    counter-reset: section;
+  }
+
+  &__item {
+    border: 1px solid $gray;
+    position: relative;
+    height: auto;
+
+    @include laptop {
+      min-height: 370px;
+      max-width: 615px!important;
+    }
+
+    &::before {
+      content: counters(section,".") " ";
+      counter-increment: section;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 94px;
+      height: 94px;
+      background-color: $accent-color;
+      color: $white;
+      font-size: 14px;
+
+      @include laptop {
+        font-size: 20px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -36px;
+      top: calc(50% - 26px);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 1px solid $gray;
+      background-color: #F4F4F4;
+      background-image: url(../img/arrow-how.svg);
+      background-repeat: no-repeat;
+      background-size: 16px;
+      background-position: center;
+
+      @include laptop {
+        width: 86px;
+        height: 86px;
+        right: -73px;
+        top: calc(50% - 43px);
+        background-size: 20px;
+      }
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+
+  &__name {
+    color: $accent-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 114px;
+    padding-right: 10px;
+    height: 94px;
+    display: flex;
+    align-items: center;;
+    border-bottom: 1px solid $gray;
+
+    @include laptop {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    padding: 15px 20px;
+
+    @include laptop {
+      font-size: 16px;
+      padding: 15px 30px;
+    }
+  }
+
+  &__text p {
+    margin: 0;
+  }
+
+  &__text p:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__navigation {
+    display: none;
+
+    @include laptop {
+      display: flex;
+      top: -80px;
+      margin: 0;
+    }
+  }
+
+  &__pagination {
+    @include laptop {
+      display: none;
+    }
+  }
+}
+
+
