@@ -28,7 +28,7 @@ function myFunction() {
   }
 }
 
-const swiperSolutions = new Swiper('.solutions__slider', {
+const swiperSolutions = new Swiper('.news__slider', {
   slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
