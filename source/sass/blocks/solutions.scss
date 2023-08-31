@@ -108,10 +108,11 @@
   }
 
   &__link {
-    color: $accent-color;
-    position: relative;
-    padding-right: 30px;
-    cursor: pointer;
+
+    @include laptop {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   &__list {
@@ -134,6 +135,13 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+    }
+  }
+
+  @include mobile-tablet-only {
+    &__object:last-child,
+    &__object:nth-child(5) {
+      display: none;
     }
   }
 

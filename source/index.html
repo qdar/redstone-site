@@ -958,7 +958,46 @@
               <p class="solutions__desc">This type of protection is a complete emulation of the work station - all traffic is transferred through the sandbox, if contamination happens the sandbox collapses</p>
             </a>
           </li>
+          <li class="solutions__object">
+            <a href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+              </picture>
+              <p class="solutions__name">Active Directory protection (Domain controller)</p>
+              <p class="solutions__desc">Even if you are not a big company yet we strongly recommend to think of having Active Directory arranged as a digital directory that keeps track of who has access to what.</p>
+            </a>
+          </li>
+          <li class="solutions__object">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+              </picture>
+              <p class="solutions__name">Antiviruses and anti-APT</p>
+              <p class="solutions__desc">(Advance Persistent Threat) – EDR (End Point Detection & Response) – XDR (Extended Detection & Response)</p>
+              <p class="solutions__desc">Can be launched decentralized - per user or can have centralized management - to be used per server</p>
+              <p class="solutions__desc">These helps to protect both end-points and servers, to resist malware, ransomware and APT threats</p>
+            </a>
+          </li>
+          <li class="solutions__object">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+              </picture>
+              <p class="solutions__name">Sandbox</p>
+              <p class="solutions__desc">This type of protection is a complete emulation of the work station - all traffic is transferred through the sandbox, if contamination happens the sandbox collapses</p>
+            </a>
+          </li>
         </ul>
+        <a class="solutions__link arrow-link" href="#">All solutions</a>
       </div>
       <article class="how-to-use">
         <div class="how-to-use__container container">
@@ -997,14 +1036,16 @@
 
     <section class="credentials" id="credentials">
       <div class="container__container container">
-        <h2 class="credentials__title animation">Credentials</h2>
+        <header class="solutions__header animation">
+          <h2 class="credentials__title animation">Credentials</h2>
+          <a class="credentials__transfer arrow-link" href="#">All Credentials</a>
+        </header>
         <div class="swiper credentials__slider slider">
           <ul class="clear-list credentials__list swiper-wrapper">
-
             <li class="credentials__item client swiper-slide">
               <article class="client__company">
                 <header class="client__header">
-                  <img class="client__image" src="img/credentials/novi-logo.png" width="80" height="80" alt="Логотип клиента">
+                  <img class="client__image" src="img/credentials01.svg" width="52" height="52" alt="Логотип клиента">
                   <h3 class="client__name">Novikombank</h3>
                   <ul class="client__data">
                     <li>Rostech's bank and subsidiary</li>
@@ -1014,7 +1055,7 @@
                 </header>
                 <p class="client__subheading">Pain points</p>
                 <p class="client__text">Arrange top class complex cyber security, launch SIEM system - the client was exercising multiple seriously prepared attacks especially after Feb 2022 and needed to exchange incident information with regionally distributed subsidiaries of the mother company</p>
-                <button class="client__link" type="button" data-open-modal="credentials-1">Show more</button>
+                <button class="client__link client__link--more" type="button">Show more</button>
                 <div class="client-hide">
                   <p class="client__subheading">Approach</p>
                   <p>All embracing phased cyber security project + SIEM launch:</p>
@@ -1038,9 +1079,9 @@
                   </p>
                 </div>
               </article>
-              <aside class="client-hide">
+              <aside class="client__aside client-hide">
                 <div class="client__box">
-                  <p class="client__subheading">Solutions applied</p>
+                  <p class="client__subheading client__subheading--primary">Solutions applied</p>
                   <ol>
                     <li>Next Generation Firewalls</li>
                     <li>Sandboxes</li>
@@ -1055,395 +1096,66 @@
                 </div>
                 <p class="client__subheading">Client’s feedback</p>
                 <p>NDA protected</p>
+                <button class="client__link client__link--less" type="button">Show less</button>
               </aside>
             </li>
 
             <li class="credentials__item client swiper-slide">
               <article class="client__company">
                 <header class="client__header">
-                  <img class="client__image" src="img/credentials/novi-logo.png" width="80" height="80" alt="Логотип клиента">
-                  <h3 class="client__name">SMP Bank (the Northern Sea Route serving bank)</h3>
+                  <img class="client__image" src="img/credentials01.svg" width="52" height="52" alt="Логотип клиента">
+                  <h3 class="client__name">Novikombank</h3>
                   <ul class="client__data">
-                    <li>> 10 000 users (end points)</li>
-                    <li>Client since 2012</li>
+                    <li>Rostech's bank and subsidiary</li>
+                    <li>10 000 users</li>
                   </ul>
                   <span class="client__label">Banking</span>
                 </header>
                 <p class="client__subheading">Pain points</p>
-                <p class="client__text">Arrange top class complex cyber security, the client is always under multiple seriously prepared attacks especially after Feb 2022</p>
-                <button class="client__link" type="button" data-open-modal="credentials-2">Show more</button>
+                <p class="client__text">Arrange top class complex cyber security, launch SIEM system - the client was exercising multiple seriously prepared attacks especially after Feb 2022 and needed to exchange incident information with regionally distributed subsidiaries of the mother company</p>
+                <button class="client__link client__link--more" type="button">Show more</button>
                 <div class="client-hide">
                   <p class="client__subheading">Approach</p>
-                  <p>All embracing phased cyber security project:</p>
+                  <p>All embracing phased cyber security project + SIEM launch:</p>
                   <ol>
                     <li>Infrastructure & network audit</li>
-                    <li>Network redesign</li>
-                    <li>Next Generation Firewalls implementation setting rules & its’ further daily track and update - one of the measures that helped to be ready and to assure current successful resistance</li>
+                    <li>Network redesign, firewalls’ rules change and further daily track and update</li>
                     <li>Hidden cyber security policies’ audit performed</li>
                     <li>Cyber security business process audit</li>
-                    <li>Cyber security support with 2 house incident reaction and 24 hours cyber security incident resolution SLA</li>
+                    <li>Cyber security support with 30 min incident reaction and 2 hours cyber security incident resolution SLA</li>
+                    <li>NAD (Network Attack Discovery)</li>
                     <li>Sandbox implementation</li>
                     <li>Web Application Firewall implementation</li>
                     <li>Honey pots implemented to deceive hackers</li>
+                    <li>HW DDOS attacks prevention solution rolled out on premise with impressive resistance speed of up to 4 Gigabit/sec</li>
                     <li>Our own virtualization farm in used in favor of the Client to emulate Client’s infrastructure</li>
-                    <li>NAD (Network Attack Discovery) implementation - now allows to track all network traffic and alarms immediately in case anything suspicious starts to happen</li>
-                    <li>End points’ protection</li>
-                    <li>DLP (Data Loss Protection) implementation</li>
-                    <li>MDM (Mobile Device Management) implementation</li>
+                    <li>SIEM system implemented</li>
                   </ol>
                   <p class="client__subheading">Execution time</p>
-                  <p>24 months overall, 6 months to roll out protection for critical processes and infrastructure</p>
+                  <p>24 months overall*, 12 months to roll out protection for critical processes and infrastructure
+                    <span class="client__extended">*extended lead time due to client’s complicated internal approval processes</span>
+                  </p>
                 </div>
               </article>
-              <aside class="client-hide">
+              <aside class="client__aside client-hide">
                 <div class="client__box">
-                  <p class="client__subheading">Solutions applied</p>
+                  <p class="client__subheading client__subheading--primary">Solutions applied</p>
                   <ol>
-                    <li>Next Generation Firewalls - Fortinet</li>
+                    <li>Next Generation Firewalls</li>
                     <li>Sandboxes</li>
-                    <li>NAD - Positive Technologies</li>
-                    <li>Kaspersky</li>
-                    <li>DLP - Solar</li>
-                    <li>MDM</li>
+                    <li>Web Application Firewalls</li>
+                    <li>Honey Pots</li>
+                    <li>NAD (Network Attack Discovery)</li>
+                    <li>Mitigator anti DDOS</li>
+                    <li>Cyber Security Support service</li>
+                    <li>Own virtualization farm</li>
+                    <li>Positive Technologies SIEM</li>
                   </ol>
                 </div>
                 <p class="client__subheading">Client’s feedback</p>
                 <p>NDA protected</p>
+                <button class="client__link client__link--less" type="button">Show less</button>
               </aside>
-            </li>
-
-            <li class="credentials__item client slider__item swiper-slide">
-              <article class="client__article">
-                <div class="client__company">
-                  <div class="client__data">
-                    <div class="client__logotype">
-                      <!-- <img src="img/credentials/logo03.png" width="80" height="80" alt="Логотип клиента"> -->
-                      <div class="client__wrapper">
-                        <h3 class="client__name">Sberbank + 200 regionally distributed subsidiaries</h3>
-                        <p class="client__data-text client-hide">The biggest bank in Russia serving population (consumer clients) >200 000 users (end points)</p>
-                      </div>
-                    </div>
-                    <p class="client__data-text client__data-text--mobile">The biggest bank in Russia serving population (consumer clients) >200 000 users (end points)</p>
-                    <span class="client__label">Banking</span>
-                  </div>
-                  <div class="client__content client__content--mobile">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Reinforce Firewall protection given lack of standardization - the Client constantly exercising multiple seriously prepared attacks...</p>
-                    <button class="client__link" type="button" data-open-modal="credentials-3">Show more</button>
-                  </div>
-                  <div class="client__content client-hide">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Reinforce Firewall protection given lack of standardization - the Client constantly exercising multiple seriously prepared attacks - reinforced after Feb 2022 however the Client resists successfully.</p>
-                    <p>Since there were a lot of M&A deals while the bank was growing up to 2018, there were no standards, each subsidiary could purchase and implement any cyder security and/or network solution – standardization was highly required and still ongoing.</p>
-                    <p class="client__subheading">Approach</p>
-                    <p>All embracing phased cyber security project:</p>
-                    <ol>
-                      <li>Based on Next Generation Firewalls pilot project with further roll-out to all subsidiaries aimed to protect key nodes of the network</li>
-                      <li>Sandbox implementation</li>
-                      <li>NAD (Network Attack Discovery) implementation - now allows to track all network traffic and alarms immediately in case anything suspicious starts to happen</li>
-                      <li>End point protection</li>
-                    </ol>
-                    <p class="client__subheading">Execution time</p>
-                    <p>18 months overall, 6 months to roll out protection for critical processes and infrastructure</p>
-                  </div>
-                </div>
-                <aside class="client-hide">
-                  <div class="client__box">
-                    <p class="client__subheading">Solutions applied</p>
-                    <ol>
-                      <li>Next Generation Firewalls</li>
-                      <li>Sandboxes</li>
-                      <li>NAD - Positive Technologies</li>
-                      <li>Kaspersky</li>
-                    </ol>
-                  </div>
-                  <div class="client__content">
-                    <p class="client__subheading">Client’s feedback</p>
-                    <p>NDA protected</p>
-                  </div>
-                </aside>
-              </article>
-            </li>
-
-            <li class="credentials__item client slider__item swiper-slide">
-              <article class="client__article">
-                <div class="client__company">
-                  <div class="client__data">
-                    <div class="client__logotype">
-                      <!-- <img src="img/credentials/logo04.png" width="80" height="80" alt="Логотип клиента"> -->
-                      <div class="client__wrapper">
-                        <h3 class="client__name">Promsvyaz bank</h3>
-                        <p class="client__data-text client-hide">One of the biggest banks in Russia serving the Army and the Ministry of Defense 15 000 users 500 Mbit/sec incoming traffic flow Client since 2015</p>
-                      </div>
-                    </div>
-                    <p class="client__data-text client__data-text--mobile">One of the biggest banks in Russia serving the Army and the Ministry of Defense 15 000 users 500 Mbit/sec incoming traffic flow Client since 2015</p>
-                    <span class="client__label">Banking</span>
-                  </div>
-                  <div class="client__content client__content--mobile">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Arrange top class complex cyber security, the client was exercising multiple seriously prepared attacks especially after Feb 2022</p>
-                    <button class="client__link" type="button" data-open-modal="credentials-4">Show more</button>
-                  </div>
-                  <div class="client__content client-hide">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Arrange top class complex cyber security, the client was exercising multiple seriously prepared attacks especially after Feb 2022</p>
-                    <p class="client__subheading">Approach</p>
-                    <p>All embracing phased cyber security project:</p>
-                    <ol>
-                      <li>Infrastructure & network audit</li>
-                      <li>Network redesign, firewalls’ rules change and further daily track and update -> analyzed firewalls’ rules, changed and reduced from 75K rules down to 40K rules while protection level increased dramatically</li>
-                      <li>Hidden cyber security policies’ audit performed</li>
-                      <li>Cyber security business process audit</li>
-                      <li>Cyber security support with 30 min incident reaction and 2 hours cyber security incident resolution SLA</li>
-                      <li>Sandbox implementation</li>
-                      <li>Web Application Firewall implementation</li>
-                      <li>Honey pots implemented to deceive hackers</li>
-                      <li>HW DDOS attacks prevention solution rolled out on premise with impressive resistance speed of up to 4 Gigabit/sec</li>
-                      <li>Our own virtualization farm in used in favor of the Client to emulate Client’s infrastructure</li>
-                    </ol>
-                    <p class="client__subheading">Execution time</p>
-                    <p>24 months overall, 9 months to roll out protection for critical processes and infrastructure</p>
-                  </div>
-                </div>
-                <aside class="client-hide">
-                  <div class="client__box">
-                    <p class="client__subheading">Solutions applied</p>
-                    <ol>
-                      <li>Next Generation Firewalls</li>
-                      <li>Sandboxes</li>
-                      <li>Web Application Firewalls</li>
-                      <li>Honey Pots</li>
-                      <li>Mitigator anti DDOS</li>
-                      <li>Cyber Security Support service</li>
-                      <li>Own virtualization farm</li>
-                    </ol>
-                  </div>
-                  <div class="client__content">
-                    <p class="client__subheading">Client’s feedback</p>
-                    <p>NDA protected</p>
-                  </div>
-                </aside>
-              </article>
-            </li>
-
-            <li class="credentials__item client slider__item swiper-slide">
-              <article class="client__article">
-                <div class="client__company">
-                  <div class="client__data">
-                    <div class="client__logotype">
-                      <!-- <img src="img/credentials/logo05.png" width="80" height="80" alt="Логотип клиента"> -->
-                      <div class="client__wrapper">
-                        <h3 class="client__name">Tele2</h3>
-                        <p class="client__data-text client-hide">TOP4 mobile telecom providers Client since 2012</p>
-                      </div>
-                    </div>
-                    <p class="client__data-text client__data-text--mobile">TOP4 mobile telecom providers Client since 2012</p>
-                    <span class="client__label">Telecom</span>
-                  </div>
-                  <div class="client__content client__content--mobile">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Network need to be segmented and protected. The client is a strategic target for hackers while business continuity is absolute crucial</p>
-                    <button class="client__link" type="button" data-open-modal="credentials-5">Show more</button>
-                  </div>
-                  <div class="client__content client-hide">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Network need to be segmented and protected. The client is a strategic target for hackers while business continuity is absolute crucial</p>
-                    <p class="client__subheading">Approach</p>
-                    <ol>
-                      <li>Network redesign</li>
-                      <li>Next Generation Firewalls implementation setting rules & its’ further daily track and update - one of the measures that helped to be ready and to assure current successful resistance</li>
-                      <li>Cyber security support with the STICTEST SLA of 15 minutes incident reaction and 4 hours critical cyber security incident resolution</li>
-                    </ol>
-                    <p class="client__subheading">Execution time</p>
-                    <p>9 months overall, 4 months to roll out protection for critical processes and infrastructure</p>
-                  </div>
-                </div>
-                <aside class="client-hide">
-                  <div class="client__box">
-                    <p class="client__subheading">Solutions applied</p>
-                    <ol>
-                      <li>Next Generation Firewalls – Fortinet</li>
-                      <li>Support provided by means of our own employees</li>
-                    </ol>
-                  </div>
-                  <div class="client__content">
-                    <p class="client__subheading">Client’s feedback</p>
-                    <p>NDA protected</p>
-                  </div>
-                </aside>
-              </article>
-            </li>
-
-            <li class="credentials__item client slider__item swiper-slide">
-              <article class="client__article">
-                <div class="client__company">
-                  <div class="client__data">
-                    <div class="client__logotype">
-                      <!-- <img src="img/credentials/logo06.png" width="80" height="80" alt="Логотип клиента"> -->
-                      <div class="client__wrapper">
-                        <h3 class="client__name">Megafon</h3>
-                        <p class="client__data-text client-hide">One of the TOP 3 mobile operators in Russia 36 000+ employees</p>
-                      </div>
-                    </div>
-                    <p class="client__data-text client__data-text--mobile">One of the TOP 3 mobile operators in Russia 36 000+ employees</p>
-                    <span class="client__label">Telecom</span>
-                  </div>
-                  <div class="client__content client__content--mobile">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Data leakage, employees’ discipline</p>
-                    <button class="client__link" type="button" data-open-modal="credentials-6">Show more</button>
-                  </div>
-                  <div class="client__content client-hide">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Data leakage, employees’ discipline</p>
-                    <p class="client__subheading">Approach</p>
-                    <ol>
-                      <li>Held interviews - evaluated DLP deployment readiness</li>
-                      <li>DLP design</li>
-                      <li>DLP deployment</li>
-                    </ol>
-                    <p class="client__subheading">Execution time</p>
-                    <p>12 months</p>
-                  </div>
-                </div>
-                <aside class="client-hide">
-                  <div class="client__box">
-                    <p class="client__subheading">Solutions applied</p>
-                    <ol>
-                      <li>DLP InfoWatch</li>
-                    </ol>
-                  </div>
-                  <div class="client__content">
-                    <p class="client__subheading">Client’s feedback</p>
-                    <p>NDA protected</p>
-                  </div>
-                </aside>
-              </article>
-            </li>
-
-            <li class="credentials__item client slider__item swiper-slide">
-              <article class="client__article">
-                <div class="client__company">
-                  <div class="client__data">
-                    <div class="client__logotype">
-                      <!-- <img src="img/credentials/logo07.png" width="80" height="80" alt="Логотип клиента"> -->
-                      <div class="client__wrapper">
-                        <h3 class="client__name">VSMPO AVISMA</h3>
-                        <p class="client__data-text client-hide">World leader of titanium production 20 000+ employees</p>
-                      </div>
-                    </div>
-                    <p class="client__data-text client__data-text--mobile">World leader of titanium production 20 000+ employees</p>
-                    <span class="client__label">Manufacturing</span>
-                  </div>
-                  <div class="client__content client__content--mobile">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Unsecure infrastructure</p>
-                    <button class="client__link" type="button" data-open-modal="credentials-7">Show more</button>
-                  </div>
-                  <div class="client__content client-hide">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Unsecure infrastructure</p>
-                    <p class="client__subheading">Approach</p>
-                    <p>All embracing phased cyber security project:</p>
-                    <ol>
-                      <li>Infrastructure & network audit</li>
-                      <li>Network redesign</li>
-                      <li>Next Generation Firewalls implementation setting rules & its’ further daily track and update - one of the measures that helped to be ready and to assure current successful resistance</li>
-                      <li>Hidden cyber security policies’ audit performed</li>
-                      <li>Cyber security business process audit</li>
-                      <li>Sandbox implementation</li>
-                      <li>Web Application Firewall implementation</li>
-                      <li>Our own virtualization farm used within project design</li>
-                      <li>NAD (Network Attack Discovery) implementation - now allows to track all network traffic and alarms immediately in case anything suspicious starts to happen</li>
-                      <li>End points’ protection</li>
-                      <li>DLP (Data Loss Protection) in process of implementation</li>
-                      <li>SIEM deployment</li>
-                    </ol>
-                    <p class="client__subheading">Execution time</p>
-                    <p>16 months, DLP ongoing to be completed by September 2023</p>
-                  </div>
-                </div>
-                <aside class="client-hide">
-                  <div class="client__box">
-                    <p class="client__subheading">Solutions applied</p>
-                    <ol>
-                      <li>NGFW Fortinet, Код Безопасности</li>
-                      <li>Sandbox Positive Technologies</li>
-                      <li>WAF Positive Technologies</li>
-                      <li>NAD Positive Technologies</li>
-                      <li>End points’ protection by Kaspersky</li>
-                      <li>SIEM Positive Technologies</li>
-                      <li>DLP Search Inform</li>
-                    </ol>
-                  </div>
-                  <div class="client__content">
-                    <p class="client__subheading">Client’s feedback</p>
-                    <p>NDA protected</p>
-                  </div>
-                </aside>
-              </article>
-            </li>
-
-            <li class="credentials__item client slider__item swiper-slide">
-              <article class="client__article">
-                <div class="client__company">
-                  <div class="client__data">
-                    <div class="client__logotype">
-                      <!-- <img src="img/credentials/logo08.png" width="80" height="80" alt="Логотип клиента"> -->
-                      <div class="client__wrapper">
-                        <h3 class="client__name">Capital Group</h3>
-                        <p class="client__data-text client-hide">One of the TOP3 developers in Russia and CIS</p>
-                      </div>
-                    </div>
-                    <p class="client__data-text client__data-text--mobile">One of the TOP3 developers in Russia and CIS</p>
-                    <span class="client__label">Construction</span>
-                  </div>
-                  <div class="client__content client__content--mobile">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Geographically distributed network, lack of control, complicated access for employees and complicated access control</p>
-                    <button class="client__link" type="button" data-open-modal="credentials-8">Show more</button>
-                  </div>
-                  <div class="client__content client-hide">
-                    <p class="client__subheading">Pain points</p>
-                    <p>Geographically distributed network, lack of control, complicated access for employees and complicated access control</p>
-                    <p class="client__subheading">Approach</p>
-                    <p>All embracing phased cyber security project, network redesign, standardized secured network solution assuring construction process tracking at all phases:</p>
-                    <ol>
-                      <li>Infrastructure & network audit</li>
-                      <li>Network redesign</li>
-                      <li>Next Generation Firewalls implementation setting rules & its’ further daily track and update - one of the measures that helped to be ready and to assure current successful resistance</li>
-                      <li>Hidden cyber security policies’ audit performed</li>
-                      <li>Cyber security business process audit</li>
-                      <li>Sandbox implementation</li>
-                      <li>MDM – mobile devices track</li>
-                      <li>Our own virtualization farm used within project design</li>
-                      <li>Anti DDoS</li>
-                      <li>End points’ protection</li>
-                      <li>DLP (Data Loss Protection)</li>
-                      <li>Entire central office migration to remote work within secured environment</li>
-                    </ol>
-                    <p class="client__subheading">Execution time</p>
-                    <p>16 months, DLP ongoing - to be completed by September 2023</p>
-                  </div>
-                </div>
-                <aside class="client-hide">
-                  <div class="client__box">
-                    <p class="client__subheading">Solutions applied</p>
-                    <ol>
-                      <li>NGFW Fortinet</li>
-                      <li>Sandbox Positive Technologies</li>
-                      <li>DDoS by Kaspersky</li>
-                      <li>MDM by Checkpoint</li>
-                      <li>End points’ protection by Kaspersky</li>
-                      <li>DLP InfoWatch</li>
-                    </ol>
-                  </div>
-                  <div class="client__content">
-                    <p class="client__subheading">Client’s feedback</p>
-                    <p>NDA protected</p>
-                  </div>
-                </aside>
-              </article>
             </li>
 
           </ul>
@@ -1531,7 +1243,8 @@
           <li class="footer__item">
             <a class="footer__link" href="#">Energy</a>
           </li>
-
+        </ul>
+        <ul class="clear-list footer__menu">
           <li class="footer__item">
             <a class="footer__link" href="#">Company</a>
           </li>
@@ -1547,7 +1260,8 @@
           <li class="footer__item">
             <a class="footer__link" href="#">Credentials</a>
           </li>
-
+        </ul>
+        <ul class="clear-list footer__menu">
           <li class="footer__item">
             <a class="footer__link" href="#">Contact</a>
           </li>

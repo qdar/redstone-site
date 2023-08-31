@@ -1,5 +1,6 @@
 .contact {
-  padding: $padding-mobile 0;
+  padding-top: 10px;
+  padding-bottom: $padding-mobile;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -9,7 +10,7 @@
 
   @include laptop {
     background-image: url(../img/map-desktop.jpg);
-    padding-top: $padding-pc;
+    padding-top: 30px;
     padding-bottom: 200px;
   }
 

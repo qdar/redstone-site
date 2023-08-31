@@ -10,31 +10,38 @@
   }
 
   &__subheading {
-    color: $white;
+    color: $accent-color;
     font-size: 18px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
 
     @include laptop {
+      margin-top: 30px;
       font-size: 20px;
     }
   }
 
+  &__subheading--primary {
+    color: $white;
+  }
+
   &__header {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 56px 1fr;
     gap: 10px 15px;
 
     @include laptop {
+      gap: 0 20px;
+      grid-template-columns: 74px 1fr auto;
       margin-bottom: 36px;
-      gap: 0 16px;
-      grid-template-columns: 80px 1fr auto;
     }
   }
 
   &__image {
     @include laptop {
       grid-row: span 2;
+      width: 74px;
+      height: 74px;
     }
   }
 
@@ -51,14 +58,15 @@
   }
 
   &__label {
-    color: #b6b6b6;
-    background-color: #3c3b3b;
+    color: $accent-color;
+    background-color: rgba(229, 65, 65, 0.10);
     font-size: 14px;
     height: 22px;
     text-align: center;
     padding: 10px 15px;
     border-radius: 34px;
     line-height: 150%;
+    grid-column: 1 / span 2;
 
     @include laptop {
       grid-row: 1/1;
@@ -78,16 +86,12 @@
     }
   }
 
-  &-hide {
-    display: none;
-
-    @include laptop {
-      display: block;
-    }
-  }
-
   &__box {
-    background-color: #e7e7e7;
+    border-radius: 4px;
+    background-image: url(../img/bg-box@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90%;
     font-size: 15px;
     padding: 15px;
     margin-bottom: 15px;
@@ -96,11 +100,6 @@
       font-size: 16px;
       padding: 25px 20px;
       margin-bottom: 46px;
-      border-radius: 4px;
-      background-image: url(../img/bg-box@2x.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 90%;
     }
   }
 
@@ -114,15 +113,49 @@
   }
 
   &__link {
-    font-size: 16px;
     color: $accent-color;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    height: 28px;
     position: relative;
-    padding-right: 30px;
+    padding-right: 18px;
     cursor: pointer;
+    transition: $transition;
 
     @include laptop {
       display: none;
     }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 11px;
+      right: 0;
+      width: 10px;
+      height: 8px;
+      background-image: url(../img/arrow-show.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      transition: $transition;
+    }
+
+    &--less::after {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &-hide {
+    display: none;
+
+    @include laptop {
+      display: block;
+    }
+  }
+
+  &-hide--open {
+    display: block;
   }
 
   &__logotype {
@@ -133,29 +166,5 @@
     @include laptop {
       align-items: flex-start;
     }
-  }
-
-  &__article--modal {
-    padding: 15px;
-  }
-
-  &__article--modal .client__subheading,
-  &__article--modal .client__content,
-  &__article--modal .client__data-text,
-  &__article--modal .client__name,
-  &__aside .client__content,
-  &__aside .client__subheading,
-  &__aside .client__box {
-    color: $bace-color;
-  }
-
-  &__article--modal .client__label {
-    color: $bace-color;
-    background-color: $white;
-    border: 1px solid rgba(211, 211, 211, 0.85);
-  }
-
-  &__aside .client__content {
-    padding: 0 15px;
   }
 }

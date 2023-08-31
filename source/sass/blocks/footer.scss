@@ -34,14 +34,18 @@
     font-weight: 300;
   }
 
+  &__nav {
+    display: flex;
+    gap: 68px;
+  }
+
   &__menu {
     display: none;
 
     @include laptop {
-      display: grid;
+      display: flex;
+      flex-direction: column;
       gap: 24px;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(5, 1fr);
     }
   }
 
