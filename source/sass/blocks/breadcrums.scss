@@ -1,0 +1,32 @@
+.breadcrums {
+  padding: 15px 0;
+
+  @include laptop {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    color: #797979;
+  }
+
+  &__item {
+    color: #797979;
+    font-size: 14px;
+
+    @include laptop {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    color: #797979;
+    font-size: 14px;
+
+    @include laptop {
+      font-size: 16px;
+    }
+  }
+}

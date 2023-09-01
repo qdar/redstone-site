@@ -17,7 +17,7 @@
   &::before {
     content: '';
     position: absolute;
-    top: 30px;
+    bottom: 30px;
     left: calc(50% - 190px);
     width: 380px;
     height: 380px;
@@ -34,12 +34,12 @@
     color: $white;
     font-size: 40px;
     @include title;
-    margin-bottom: 200px;
+    margin-bottom: 36px;
 
     @include laptop {
       font-size: 80px;
       letter-spacing: 3.2px;
-      margin-bottom: 96px;
+      margin-bottom: 155px;
     }
   }
 
@@ -50,9 +50,11 @@
     background: rgba(31, 28, 28, 0.45);
     backdrop-filter: blur(29px);
     max-width: 445px;
+    margin-bottom: 345px;
 
     @include laptop {
       padding: 50px 35px;
+      margin-bottom: 0;
     }
   }
 

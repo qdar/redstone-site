@@ -1,0 +1,38 @@
+.page {
+  background-color: $white;
+
+
+  &--about .about {
+    color: $bace-color;
+    background-color: $white;
+    padding-top: 0px;
+  }
+
+  &--about .about__title {
+    color: $bace-color;
+  }
+
+  &--about .contact {
+    padding-top: 60px;
+
+    @include laptop {
+      padding-top: 150px;
+    }
+  }
+
+  &--about .contact__information {
+    background-color: #fff;
+    box-shadow: 0px 22px 43px -20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(29px);
+    color: #36322F;
+  }
+
+  &--about .contact__link {
+    color: #36322F;
+  }
+
+  &--about .contact__link--accent {
+    color: $accent-color;
+  }
+}
+

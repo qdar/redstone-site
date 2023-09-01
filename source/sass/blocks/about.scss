@@ -108,6 +108,42 @@
     margin-bottom: 0;
   }
 
+  &__image {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    @include laptop {
+      margin-top: 50px;
+      margin-bottom: 90px;
+    }
+  }
+
+  &__subheading {
+    font-size: 30px;
+    @include title;
+    margin-bottom: 20px;
+
+    @include laptop {
+      font-size: 60px;
+      line-height: 120%;
+      letter-spacing: 3.2px;
+      margin-bottom: 45px;
+    }
+
+    &--small {
+      @include laptop {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__subheading-text {
+    @include laptop {
+      max-width: 1000px;
+    }
+  }
+
   &__list {
     margin-top: 40px;
     margin-bottom: 60px;

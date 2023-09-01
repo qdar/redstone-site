@@ -1,12 +1,15 @@
 .hero {
+  padding-top: 56px;
   padding-bottom: 50px;
   position: relative;
 
   @include laptop {
+    padding-top: 60px;
     padding-bottom: 130px;
   }
 
   @include desktop {
+    padding-top: 130px;
     padding-bottom: 230px;
   }
 
