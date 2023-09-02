@@ -2,19 +2,32 @@
   background-color: $white;
 }
 
-.index .partners {
-  padding-top: $padding-mobile;
+.index {
 
-  @include laptop {
-    padding-top: $padding-pc;
+  & .partners {
+    padding-top: $padding-mobile;
+
+    @include laptop {
+      padding-top: $padding-pc;
+    }
+  }
+
+  & .contact {
+    padding-top: 0;
+
+    @include laptop {
+      padding-top: 30px;
+    }
+  }
+
+  & .solutions {
+    padding-top: $padding-mobile;
+
+    @include laptop {
+      padding-top: $padding-pc;
+    }
   }
 }
 
-.index .contact {
-  padding-top: 0;
 
-  @include laptop {
-    padding-top: 30px;
-  }
-}
 

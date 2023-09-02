@@ -1,20 +1,20 @@
 .footer {
-  padding: 30px 0;
   background: $accent-color;
   border-top: 1px solid $accent-red;
 
   @include laptop {
-    padding-top: 78px;
-    padding-bottom: 35px;
     border-top: 0 solid $accent-red;
   }
 
   &__container {
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
 
     @include laptop {
       align-items: flex-start;
+      margin-top: 78px;
+      margin-bottom: 35px;
     }
   }
 
@@ -81,6 +81,5 @@
 
 .last-footer {
   border-top: 1px solid $accent-red;
-  background-color: $accent-color;
   padding: 24px 0 28px;
 }
