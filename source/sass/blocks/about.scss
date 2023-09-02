@@ -49,6 +49,16 @@
     }
   }
 
+  &--light {
+    color: $bace-color;
+    background-color: $white;
+    padding-top: 0px;
+  }
+
+  &--light .about__title {
+    color: $bace-color;
+  }
+
   &__header {
     @include laptop {
       display: grid;

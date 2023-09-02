@@ -1,6 +1,5 @@
 .contact {
-  padding-top: 10px;
-  padding-bottom: $padding-mobile;
+  padding: $padding-mobile 0;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -10,7 +9,7 @@
 
   @include laptop {
     background-image: url(../img/map-desktop.jpg);
-    padding-top: 30px;
+    padding-top: $padding-pc;
     padding-bottom: 200px;
   }
 
@@ -55,6 +54,21 @@
     @include laptop {
       padding: 50px 35px;
       margin-bottom: 0;
+    }
+
+    &--light {
+      background-color: #fff;
+      box-shadow: 0px 22px 43px -20px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(29px);
+      color: #36322F;
+    }
+
+    &--light .contact__link {
+      color: #36322F;
+    }
+
+    &--light .contact__link--accent {
+      color: $accent-color;
     }
   }
 
