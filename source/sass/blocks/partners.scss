@@ -1,10 +1,10 @@
 .partners {
   overflow: hidden;
   background-color: $white;
-  padding: $padding-mobile 0;
+  padding-bottom: $padding-mobile;
 
   @include laptop {
-    padding: $padding-pc 0;
+    padding-bottom: $padding-pc;
   }
 
   &__title {
@@ -17,7 +17,7 @@
       font-size: 80px;
       line-height: 120%;
       letter-spacing: 3.2px;
-      margin-bottom: 96px;
+      margin-bottom: 50px;
     }
   }
 
@@ -130,10 +130,21 @@
   }
 
   &__list {
+    display: grid;
+    gap: 15px;
+
     @include laptop {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
+    }
+  }
+
+  &__subtext {
+    margin-bottom: 40px;
+
+    @include laptop {
+      max-width: 1000px;
+      margin-bottom: 50px;
     }
   }
 

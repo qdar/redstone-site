@@ -36,3 +36,11 @@
   }
 }
 
+.index .partners {
+  padding-top: $padding-mobile;
+
+  @include laptop {
+    padding-top: $padding-pc;
+  }
+}
+
