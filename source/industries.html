@@ -776,8 +776,8 @@
         <h2 class="credentials__title">Credentials</h2>
         <div class="swiper credentials__slider slider">
           <ul class="clear-list credentials__list swiper-wrapper">
-            <li class="credentials__item client swiper-slide">
-              <article class="client__company">
+            <li class="credentials__item client swiper-slide accordion" data-accordion="parent" data-single="data-single">
+              <article class="client__company accordion__element" data-accordion="element">
                 <header class="client__header">
                   <img class="client__image" src="img/credentials01.svg" width="52" height="52" alt="Логотип клиента">
                   <h3 class="client__name">Novikombank</h3>
@@ -789,8 +789,7 @@
                 </header>
                 <p class="client__subheading">Pain points</p>
                 <p class="client__text">Arrange top class complex cyber security, launch SIEM system - the client was exercising multiple seriously prepared attacks especially after Feb 2022 and needed to exchange incident information with regionally distributed subsidiaries of the mother company</p>
-                <button class="client__link client__link--more" type="button">Show more</button>
-                <div class="client-hide">
+                <div class="accordion__content" data-accordion="content">
                   <p class="client__subheading">Approach</p>
                   <p>All embracing phased cyber security project + SIEM launch:</p>
                   <ol>
@@ -811,9 +810,28 @@
                   <p>24 months overall*, 12 months to roll out protection for critical processes and infrastructure
                     <span class="client__extended">*extended lead time due to client’s complicated internal approval processes</span>
                   </p>
+                  <div class="client__box client__box--mobile">
+                    <p class="client__subheading client__subheading--primary">Solutions applied</p>
+                    <ol>
+                      <li>Next Generation Firewalls</li>
+                      <li>Sandboxes</li>
+                      <li>Web Application Firewalls</li>
+                      <li>Honey Pots</li>
+                      <li>NAD (Network Attack Discovery)</li>
+                      <li>Mitigator anti DDOS</li>
+                      <li>Cyber Security Support service</li>
+                      <li>Own virtualization farm</li>
+                      <li>Positive Technologies SIEM</li>
+                    </ol>
+                  </div>
                 </div>
+                <button class="accordion__button client__link" type="button" data-accordion="button">
+                  Show
+                  <span class="accordion__button--more">more</span>
+                  <span class="accordion__button--less">less</span>
+                </button>
               </article>
-              <aside class="client__aside client-hide">
+              <aside class="client__aside">
                 <div class="client__box">
                   <p class="client__subheading client__subheading--primary">Solutions applied</p>
                   <ol>
@@ -830,12 +848,11 @@
                 </div>
                 <p class="client__subheading">Client’s feedback</p>
                 <p>NDA protected</p>
-                <button class="client__link client__link--less" type="button">Show less</button>
               </aside>
             </li>
 
-            <li class="credentials__item client swiper-slide">
-              <article class="client__company">
+            <li class="credentials__item client swiper-slide accordion" data-accordion="parent" data-single="data-single">
+              <article class="client__company accordion__element" data-accordion="element">
                 <header class="client__header">
                   <img class="client__image" src="img/credentials01.svg" width="52" height="52" alt="Логотип клиента">
                   <h3 class="client__name">Novikombank</h3>
@@ -847,8 +864,7 @@
                 </header>
                 <p class="client__subheading">Pain points</p>
                 <p class="client__text">Arrange top class complex cyber security, launch SIEM system - the client was exercising multiple seriously prepared attacks especially after Feb 2022 and needed to exchange incident information with regionally distributed subsidiaries of the mother company</p>
-                <button class="client__link client__link--more" type="button">Show more</button>
-                <div class="client-hide">
+                <div class="accordion__content" data-accordion="content">
                   <p class="client__subheading">Approach</p>
                   <p>All embracing phased cyber security project + SIEM launch:</p>
                   <ol>
@@ -869,9 +885,28 @@
                   <p>24 months overall*, 12 months to roll out protection for critical processes and infrastructure
                     <span class="client__extended">*extended lead time due to client’s complicated internal approval processes</span>
                   </p>
+                  <div class="client__box client__box--mobile">
+                    <p class="client__subheading client__subheading--primary">Solutions applied</p>
+                    <ol>
+                      <li>Next Generation Firewalls</li>
+                      <li>Sandboxes</li>
+                      <li>Web Application Firewalls</li>
+                      <li>Honey Pots</li>
+                      <li>NAD (Network Attack Discovery)</li>
+                      <li>Mitigator anti DDOS</li>
+                      <li>Cyber Security Support service</li>
+                      <li>Own virtualization farm</li>
+                      <li>Positive Technologies SIEM</li>
+                    </ol>
+                  </div>
                 </div>
+                <button class="accordion__button client__link" type="button" data-accordion="button">
+                  Show
+                  <span class="accordion__button--more">more</span>
+                  <span class="accordion__button--less">less</span>
+                </button>
               </article>
-              <aside class="client__aside client-hide">
+              <aside class="client__aside">
                 <div class="client__box">
                   <p class="client__subheading client__subheading--primary">Solutions applied</p>
                   <ol>
@@ -888,7 +923,6 @@
                 </div>
                 <p class="client__subheading">Client’s feedback</p>
                 <p>NDA protected</p>
-                <button class="client__link client__link--less" type="button">Show less</button>
               </aside>
             </li>
 
@@ -1012,6 +1046,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script type="module" src="js/module-tabs.js"></script>
   <script type="module" src="js/module-modal.js"></script>
+  <script type="module" src="js/module-accordion.js"></script>
   <script type="module" src="js/module-validate.js"></script>
   <script src="js/smooth-scroll.polyfills.min.js"></script>
   <script src="js/script.js"></script>

@@ -167,26 +167,3 @@ let elements = document.querySelectorAll('.animation');
 for (let elm of elements) {
   observer.observe(elm);
 }
-
-const allShowMore = document.querySelectorAll('.client__link');
-const clientContent = document.querySelector('.client-hide');
-const clientAside = document.querySelector('.client__aside');
-const clientMore = document.querySelector('.client__link--more');
-
-for (i = 0; i < allShowMore.length; i++) {
-  allShowMore[i].onclick = function() {
-    clientContent.classList.toggle("client-hide--open");
-    clientAside.classList.toggle("client-hide--open");
-    clientMore.classList.toggle("client-hide");
-  }
-};
-
-// if (document.documentElement.clientWidth < 1024) {
-//   const allTexts = document.querySelectorAll('.client__text');
-//   allTexts.forEach(item => {
-//     item.textContent = (item.textContent).slice(0, 180) + '...';
-//   })
-// }
-
-
-// console.log(document.documentElement.clientWidth);
