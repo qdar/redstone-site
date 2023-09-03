@@ -28,7 +28,7 @@ function myFunction() {
   }
 }
 
-const swiperSolutions = new Swiper('.news__slider', {
+const swiperCommon = new Swiper('.common-slider', {
   slidesPerView: 1,
   spaceBetween: 20,
   pagination: {

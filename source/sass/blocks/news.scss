@@ -24,12 +24,10 @@
     color: $white;
     font-size: 40px;
     @include title;
-    margin-bottom: 25px;
 
     @include laptop {
       font-size: 80px;
       letter-spacing: 3.2px;
-      margin-bottom: 60px;
     }
   }
 
@@ -82,36 +80,11 @@
     color: #dadada;
   }
 
-  &__pagination {
+  &__slider .common-slider__pagination {
     @include laptop {
+      display: block;
       text-align: left;
     }
-  }
-
-  &__pagination .swiper-pagination-bullet {
-    margin-left: 0!important;
-  }
-
-  &__navigation {
-    display: none;
-
-    @include laptop {
-      display: flex;
-      top: 0;
-      margin: 0;
-    }
-  }
-
-  &__slider {
-    margin-top: -110px;
-  }
-
-  &__list {
-    padding-top: 110px;
-  }
-
-  &__slider .swiper-wrapper {
-    padding-bottom: 48px;
   }
 
   &__footer {

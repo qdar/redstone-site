@@ -10,3 +10,39 @@
     min-width: 1512px
   }
 }
+
+.common-slider {
+  margin-top: -84px;
+
+  @include laptop {
+    margin-top: -60px;
+  }
+
+  &__list {
+    padding-top: 110px;
+  }
+
+  & .swiper-wrapper {
+    padding-bottom: 48px;
+  }
+
+  &__navigation {
+    display: none;
+
+    @include laptop {
+      display: flex;
+      top: 0;
+      margin: 0;
+    }
+  }
+
+  &__pagination {
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__pagination .swiper-pagination-bullet {
+    margin-left: 0!important;
+  }
+}
