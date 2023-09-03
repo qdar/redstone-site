@@ -6,47 +6,42 @@
     padding-bottom: $padding-pc;
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/bg-industries.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.3;
-    z-index: -1;
-
-    @include laptop {
-      background-image: url(../img/bg-industries-pc.svg);
-      top: 120px;
-    }
-
-    @include desktop {
-      left: -320px;
-    }
-  }
-
   &__title {
     color: $white;
     font-size: 40px;
     @include title;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     @include laptop {
       font-size: 80px;
       letter-spacing: 3.2px;
-      margin-bottom: 96px;
+      margin-bottom: 50px;
     }
   }
 
   &__content {
-    margin-top: 25px;
+    color: $white;
 
     @include laptop {
-      margin-top: 0;
+      font-size: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__content p {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__content p:last-child {
+    margin-bottom: 0;
+  }
+
+  &__tabs {
+    @include laptop {
+      padding-top: 20px;
     }
   }
 
@@ -120,6 +115,15 @@
     @include laptop {
       display: flex;
       justify-content: flex-end;
+    }
+  }
+
+  &__image {
+    margin-bottom: 24px;
+
+    @include laptop {
+      margin-top: -120px;
+      margin-bottom: 70px;
     }
   }
 }
