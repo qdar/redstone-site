@@ -132,7 +132,8 @@
   &__subheading {
     font-size: 30px;
     @include title;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 
     @include laptop {
       font-size: 60px;
@@ -159,6 +160,10 @@
     margin-bottom: 60px;
     display: grid;
     gap: 20px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     @include laptop {
       margin-top: 0;

@@ -133,9 +133,16 @@
     display: grid;
     gap: 15px;
 
-    @include laptop {
+    @include tablet {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
+    }
+  }
+
+  @include mobile-tablet-only {
+    .swiper-wrapper.partners__list {
+      display: flex;
+      gap: 0;
     }
   }
 

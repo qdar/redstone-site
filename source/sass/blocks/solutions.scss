@@ -128,17 +128,16 @@
   }
 
   &__objects {
-    @include laptop {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 20px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
     }
-  }
 
-  @include mobile-tablet-only {
-    &__object:last-child,
-    &__object:nth-child(5) {
-      display: none;
+    @include laptop {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -180,11 +179,15 @@
     margin-top: 30px;
     display: grid;
 
-    @include laptop {
+    @include tablet {
       font-size: 20px;
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      gap: 30px;
       margin-top: 50px;
+    }
+
+    @include laptop {
+      gap: 60px;
     }
   }
 
@@ -209,8 +212,12 @@
     order: -1;
     margin-bottom: 24px;
 
-    @include laptop {
+    @include tablet {
       order: 1;
+      margin-top: -70px;
+    }
+
+    @include laptop {
       margin-top: -120px;
     }
   }

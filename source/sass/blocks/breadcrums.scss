@@ -38,7 +38,11 @@
       border-radius: 50%;
       position: absolute;
       right: -16px;
-      top: 7px;
+      top: 5px;
+
+      @include laptop {
+        top: 7px;
+      }
     }
   }
 }

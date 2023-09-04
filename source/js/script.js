@@ -62,8 +62,11 @@ const swiperUse = new Swiper('.how-to-use__slider', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    1024: {
+    768: {
       slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
       spaceBetween: 60,
     },
   },
@@ -124,7 +127,7 @@ const swiperIndustries = new Swiper('.industries__slider', {
 
 });
 
-if (document.documentElement.clientWidth < 1024) {
+if (document.documentElement.clientWidth < 1025) {
   const swiperTeam = new Swiper('.about__slider', {
     slidesPerView: 1,
     spaceBetween: 20,

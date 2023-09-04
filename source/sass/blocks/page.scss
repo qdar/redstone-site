@@ -36,6 +36,13 @@
     }
   }
 
+  @include mobile-tablet-only {
+    .solutions__object:last-child,
+    .solutions__object:nth-child(5) {
+      display: none;
+    }
+  }
+
   & .news__title {
     color: $white;
     margin: 0;

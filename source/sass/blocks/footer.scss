@@ -35,18 +35,18 @@
   }
 
   &__nav {
-    display: flex;
-    gap: 68px;
-  }
-
-  &__menu {
     display: none;
 
     @include laptop {
       display: flex;
-      flex-direction: column;
-      gap: 24px;
+      gap: 68px;
     }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   &__link {
