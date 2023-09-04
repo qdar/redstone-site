@@ -10,6 +10,14 @@
   }
 }
 
+.main-page .header {
+  background-color: transparent;
+
+  &--sticky {
+    background-color: rgba(37,36,36,.75);
+  }
+}
+
 .index {
 
   & .partners {
@@ -18,6 +26,19 @@
     @include laptop {
       padding-top: $padding-pc;
     }
+  }
+
+  & .news {
+    padding-top: $padding-mobile;
+
+    @include laptop {
+      padding-top: $padding-pc;
+    }
+  }
+
+  & .news__title {
+    color: $white;
+    margin: 0;
   }
 
   & .contact {
@@ -56,6 +77,21 @@
 
     @include desktop {
       left: -320px;
+    }
+  }
+
+  & .news::before {
+    @include laptop {
+      content: '';
+      background-image: url(../img/bg-news.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: -20%;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
     }
   }
 }

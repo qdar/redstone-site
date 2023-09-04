@@ -26,6 +26,12 @@
     padding-bottom: 48px;
   }
 
+  &__list.news__list,
+  &__list.solutions__objects {
+    display: flex;
+    gap: 0;
+  }
+
   &__navigation {
     display: none;
 
