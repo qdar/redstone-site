@@ -136,6 +136,11 @@ if (document.documentElement.clientWidth < 1024) {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+    },
   });
 
   const swiper = new Swiper('.partners__slider', {
@@ -148,6 +153,11 @@ if (document.documentElement.clientWidth < 1024) {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
     },
   });
 }

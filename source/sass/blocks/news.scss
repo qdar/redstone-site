@@ -20,6 +20,10 @@
     @include title;
     margin-bottom: 30px;
 
+    &--center {
+      text-align: center;
+    }
+
     @include laptop {
       font-size: 80px;
       letter-spacing: 3.2px;
@@ -110,6 +114,108 @@
     @include laptop {
       justify-content: flex-end;
       margin-top: -20px;
+    }
+  }
+
+  &__cover {
+    padding: 30px 0;
+
+    @include laptop {
+      padding: 50px 0;
+    }
+  }
+
+  &__article {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 15px;
+
+    @include laptop {
+      font-size: 16px;
+    }
+  }
+
+  &__article h3 {
+    font-size: 20px;
+    margin-top: 35px;
+
+    @include laptop {
+      font-size: 24px;
+      margin-top: 50px;
+    }
+  }
+
+  &__article p {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  &__article a {
+    color: $accent-color;
+    text-decoration: underline;
+    transition: $transition;
+  }
+
+  &__article a:hover {
+    color: #F82A2A;
+    text-decoration: underline;
+  }
+
+  &__article blockquote {
+    margin: 35px 0;
+    padding: 30px 14px;
+    background: #F4F4F4;
+    position: relative;
+    font-size: 20px;
+    line-height: 160%;
+
+    @include laptop {
+      margin: 50px 0;
+      padding: 40px 32px;
+      font-size: 24px;
+    }
+
+    &::before {
+      content: '';
+      background-image: url(../img/blockquote.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 44px;
+      height: 36px;
+      position: absolute;
+      top: -15px;
+
+      @include laptop {
+        width: 54px;
+        height: 44px;
+        left: 22px;
+        top: -18px;
+      }
+    }
+  }
+
+  &__date {
+    color: #848484;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 160%;
+    border-top: 1px solid rgba(211, 211, 211, 0.25);
+    padding-top: 26px;
+  }
+
+  &__article &__date {
+    margin-bottom: 0;
+  }
+
+  &__images {
+    display: grid;
+    gap: 20px;
+    margin: 35px 0;
+
+    @include laptop {
+      margin: 50px 0;
+      display: flex;
+      gap: 30px;
     }
   }
 }
