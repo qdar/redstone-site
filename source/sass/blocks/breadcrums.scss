@@ -24,9 +24,21 @@
   &__link {
     color: #797979;
     font-size: 14px;
+    position: relative;
 
     @include laptop {
       font-size: 16px;
+    }
+
+    &::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: #797979;
+      border-radius: 50%;
+      position: absolute;
+      right: -16px;
+      top: 7px;
     }
   }
 }
