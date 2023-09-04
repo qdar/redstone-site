@@ -62,11 +62,11 @@
     font-family: 'Oxygen', 'Tahoma', serif;
     font-size: 55px;
     font-weight: 400;
-    line-height: 91%;
+    line-height: 90%;
     letter-spacing: 2px;
     text-transform: uppercase;
     z-index: 1;
-    animation: 2s ease-in 0s fade-in;
+    animation: 1.2s ease-out 0s fade-in;
 
     @include tablet {
       font-size: 100px;
@@ -88,13 +88,13 @@
   }
 
   &:nth-child(2) {
-    animation: 3s ease-in 0s fade-in;
+    animation: 1.8s ease-out 0s fade-in;
   }
 
   &__item:last-child {
     display: grid;
     justify-content: end;
-    animation: 4s ease-in 0s fade-in;
+    animation: 2.2s ease-out 0s fade-in;
   }
 
   &__intro {
@@ -103,7 +103,7 @@
     font-weight: 300;
     width: 210px;
     position: relative;
-    animation: 2.5s ease-in 0s fade-in;
+    animation: 2s ease-out 0s fade-in;
 
     @include laptop {
       position: absolute;
@@ -140,7 +140,7 @@
 
   &__button {
     margin-top: 100px;
-    animation: 3s ease-in 0s fade-in;
+    animation: 1.9s ease-out 0s fade-in;
 
     @include laptop {
       margin-top: 0;

@@ -6,6 +6,15 @@
     position: relative;
   }
 
+  &--bottom {
+    background: #F4F4F4;
+    padding: 60px 0;
+
+    @include laptop {
+      padding: 90px 0;
+    }
+  }
+
   &__title {
     font-size: 40px;
     @include title;
