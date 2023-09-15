@@ -17,7 +17,7 @@
   <link rel="preload" href="/fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/Oxygen-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
-<body class="page page--about">
+<body class="pages pages--about">
   <header class="header">
     <div class="header__container">
       <a class="header__logo" href="/">
@@ -115,7 +115,12 @@
             <p>Geographical aspect and specifics are always considered in our projects which is why our solutions portfolio and services are not limited to global IT and cyber security solutions – we have deep and solid expertise in extremely competitive Russian solutions what gives us tremendous flexibility and independence.</p>
           </div>
         </div>
-        <img class="about__image" src="img/about-page.jpg" alt="">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/about-page.webp 1x, img/about-page@2x.webp 2x">
+          <source type="image/webp" srcset="img/about-page-mobile.webp 1x, img/about-page-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/about-page.png 1x, img/about-page@2x.png 2x">
+          <img class="about__image" src="img/about-page-mobile.png" srcset="img/about-page-mobile@2x.png 2x" loading="lazy" alt="About">
+        </picture>
         <h3 class="about__subheading animation">Team</h3>
         <p class="about__subheading-text animation">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
       </div>

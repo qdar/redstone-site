@@ -28,6 +28,14 @@
       font-size: 80px;
       letter-spacing: 3.2px;
     }
+
+    &--subtitle {
+      @include laptop {
+        font-size: 40px;
+        margin-bottom: 36px;
+      }
+    }
+
   }
 
   &__subtitle {
@@ -214,11 +222,107 @@
 
     @include tablet {
       order: 1;
-      margin-top: -70px;
-    }
-
-    @include laptop {
-      margin-top: -120px;
     }
   }
+
+  &__image img {
+    width: 100%;
+  }
+
+  &__form {
+    margin-top: 36px;
+
+    @include laptop {
+      margin-top: 48px;
+    }
+  }
+
+
+  &__policy {
+    @include laptop {
+      order: 1;
+    }
+
+    & input:checked::before {
+      background-image: url(../img/checkbox-red.svg);
+    }
+  }
+
+  &__inputs {
+    @include laptop {
+      display: grid;
+      gap: 30px;
+    }
+
+    & .is-invalid {
+      input {
+        border: 1px solid #E54141;
+        background-color: #FFEBEB;
+
+        &:focus,
+        &:hover {
+          border: 1px solid #E54141;
+          background-color: #FFEBEB;
+        }
+      }
+    }
+
+    & .is-valid {
+      input {
+        background-color: $white;
+        border: 1px solid #6D6D6D;
+        transition: $transition;
+
+        &:focus,
+        &:hover {
+          border: 1px solid rgba(#6D6D6D, 0.9);
+        }
+      }
+    }
+
+    & .input-message {
+
+      &.is-invalid {
+        color: $accent-color;
+      }
+
+      &.is-valid {
+        color: $bace-color;
+      }
+    }
+  }
+
+  &__input {
+    color: #36322F;
+    border: 1px solid rgba(54, 50, 47, 0.25);
+    background-color: #FDFDFD;
+  }
+
+  &__input:hover {
+    border: 1px solid #6D6D6D;
+    background-color: $white;
+  }
+
+  &__input::placeholder {
+    color: #36322F;
+  }
+
+  &__inputs-group {
+    display: grid;
+    gap: 15px;
+
+    @include laptop {
+      gap: 30px;
+    }
+  }
+
+  &__buttons {
+    @include laptop {
+      margin-top: 64px;
+      display: flex;
+      align-items: center;
+      gap: 44px;
+    }
+  }
+
 }

@@ -1,4 +1,4 @@
-.page {
+.pages {
   background-color: $white;
 
   &--about .contact {
@@ -10,7 +10,7 @@
   }
 }
 
-.main-page .header {
+.home .header {
   background-color: transparent;
 
   &--sticky {

@@ -17,7 +17,7 @@
   <link rel="preload" href="/fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/Oxygen-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
-<body class="page page--partners">
+<body class="pages">
   <header class="header">
     <div class="header__container">
       <a class="header__logo" href="/">
@@ -108,9 +108,9 @@
 
     <section class="solutions">
       <div class="solutions__container container">
-        <h2 class="solutions__title animation">Firewalls</h2>
         <div class="solutions__content animation">
           <div class="solutions__text">
+            <h2 class="solutions__title solutions__title--subtitle animation">Firewalls</h2>
             <p>To be set-up between Internet and internal networks. Firewall set-up is essentially important! Firewall is nearly useless without it. It’s a consulting job we have deepest expertise in with all vendors.</p>
             <button class="solutions__button button" data-open-modal="order">Take it</button>
           </div>
@@ -128,7 +128,7 @@
 
     <section class="solutions solutions--bottom">
       <div class="container">
-        <h2 class="solutions__title animation">Solutions & Services</h2>
+        <h2 class="solutions__title solutions__title--subtitle animation">Solutions & Services</h2>
         <div class="swiper common-slider animation">
           <ul class="clear-list common-slider__list solutions__objects swiper-wrapper">
             <li class="solutions__object swiper-slide">
@@ -296,40 +296,37 @@
       <div class="modal__overlay" data-close-modal="data-close-modal"></div>
       <div class="modal__content">
         <section class="solutions__modal-text">
-          <h2 class="solutions__modal-title">Sent order</h2>
+          <h2 class="solutions__title solutions__modal-title">Order a solution</h2>
           <div data-form-validate="data-form-validate" data-callback="base">
-            <form class="intouch__form animation" id="user" action="order.php" method="POST">
-              <fieldset class="intouch__inputs">
-                <div class="intouch__inputs-group">
+            <form class="solutions__form animation" id="user" action="order.php" method="POST">
+              <fieldset class="solutions__inputs">
+                <div class="solutions__inputs-group">
                   <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="The field must be filled in" data-message-extra="Check the correctness of filling in the field" data-required="data-required">
-                    <input class="intouch__input input" type="text" name="your-name" id="your-name" placeholder="Your name" required>
+                    <input class="solutions__input input" type="text" name="name-solution" id="name-solution" value="Firewalls" disabled>
                   </div>
-                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="The field must be filled in" data-message-extra="Check the correctness of filling in the field" data-required="data-required">
-                    <input class="intouch__input input" type="tel" name="your-phone" id="your-phone" placeholder="+62 000 000 000 00" required>
+                  <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="The field must be filled in" data-message-extra="Check the correctness of filling in the field" data-required="data-required">
+                    <input class="solutions__input input" type="text" name="your-name" id="your-name" placeholder="Your name" required>
                   </div>
                   <div class="custom-input" data-validate-type="email" data-message-base="The field must be filled in" data-required="data-required">
-                    <input class="intouch__input input" type="email" name="your-email" id="your-email" placeholder="E-mail" required>
+                    <input class="solutions__input input" type="email" name="your-email" id="your-email" placeholder="E-mail" required>
+                  </div>
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="The field must be filled in" data-message-extra="Check the correctness of filling in the field" data-required="data-required">
+                    <input class="solutions__input input" type="tel" name="your-phone" id="your-phone" placeholder="+62 000 000 000 00" required>
                   </div>
                 </div>
-                <div class="custom-textarea" data-validate-type="text" data-limitation="letters-and-digit">
-                  <textarea class="intouch__textarea input" name="message" id="message" cols="30" rows="10" placeholder="Your message" minlength="8" maxlength="250"></textarea>
-                </div>
               </fieldset>
-              <div class="intouch__buttons">
-                <label class="intouch__label policy" for="policy">
+              <div class="solutions__buttons">
+                <label class="solutions__policy policy" for="policy">
                   <input type="checkbox" name="policy" id="policy" checked>
-                  <span>Consent to the <a class="policy__link" href="#">privacy policy</a> and the processing of personal data</span>
+                  <span>Consent to the <a class="policy__link policy__link--black" href="#">privacy policy</a> and the processing of personal data</span>
                 </label>
-                <button class="intouch__button button button--primary" type="submit">Send</button>
+                <button class="button" type="submit">Send</button>
               </div>
             </form>
             </div>
         </section>
         <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
           <span class="visually-hidden">Закрыть</span>
-        </button>
-        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
-          Close
         </button>
       </div>
     </div>

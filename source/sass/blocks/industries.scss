@@ -99,6 +99,16 @@
     }
   }
 
+  &__navigation.swiper-button-next,
+  &__navigation.swiper-button-prev {
+    background-color: rgba(217, 217, 217, 0.1);
+  }
+
+  &__navigation.swiper-button-next:hover,
+  &__navigation.swiper-button-prev:hover {
+    background-color: rgba(217, 217, 217, 0.25);
+  }
+
   &__pagination {
     @include laptop {
       text-align: left;
