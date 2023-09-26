@@ -38,10 +38,6 @@
     transform: translate(-50%, 0%) rotate(-45deg);
   }
 
-  @include laptop {
-      display: none;
-  }
-
 }
 
 @include mobile-tablet-only {

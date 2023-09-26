@@ -39,7 +39,11 @@
 
     @include laptop {
       display: flex;
-      gap: 68px;
+      gap: 80px;
+    }
+
+    @include desktop {
+      gap: 120px;
     }
   }
 

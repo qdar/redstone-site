@@ -8,7 +8,8 @@
     transition: $transition;
   }
 
-  &__link:hover {
+  &__link:hover,
+  &__link--current {
     color: $accent-color;
     text-decoration: underline;
   }

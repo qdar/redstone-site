@@ -45,6 +45,12 @@
       grid-template-columns: 3fr 0fr 1fr;
       align-items: center;
     }
+
+    &--id {
+      @include laptop {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 
   &__list {
@@ -60,7 +66,7 @@
   &__item {
     color: $white;
     font-family: 'Oxygen', 'Tahoma', serif;
-    font-size: 55px;
+    font-size: 2.9em;
     font-weight: 400;
     line-height: 90%;
     letter-spacing: 2px;
@@ -87,6 +93,10 @@
     z-index: 0;
   }
 
+  &__container--id &__item:first-child {
+    z-index: 1;
+  }
+
   &:nth-child(2) {
     animation: 1.8s ease-out 0s fade-in;
   }
@@ -95,6 +105,10 @@
     display: grid;
     justify-content: end;
     animation: 2.2s ease-out 0s fade-in;
+  }
+
+  &__container--id &__item:last-child {
+    justify-content: start;
   }
 
   &__intro {
@@ -115,6 +129,15 @@
 
     @include desktop {
       right: 48%;
+    }
+  }
+
+  &__container--id &__intro {
+    @include laptop {
+      margin-left: 30px;
+      margin-right: 10%;
+      position: relative;
+      right: 0;
     }
   }
 
@@ -148,14 +171,37 @@
   }
 }
 
-:lang(in) .hero__item {
-  font-size: 46px;
+.hero__item-last {
+  z-index: 1;
 
   @include laptop {
-    font-size: 140px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
   }
 }
 
-:lang(in) .hero__item:first-child {
-  margin-left: 20%;
+.hero__item-text {
+  color: $white;
+  font-family: 'Oxygen', 'Tahoma', serif;
+  font-size: 2.9em;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 1;
+  animation: 1.2s ease-out 0s fade-in;
+
+  @include tablet {
+    font-size: 100px;
+  }
+
+  @include laptop {
+    font-size: 170px;
+    letter-spacing: 7px;
+  }
+
+  @include desktop {
+    font-size: 206px;
+  }
 }

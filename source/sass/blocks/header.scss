@@ -28,12 +28,14 @@
     }
   }
 
-  &__lang {
-    position: relative;
-
+  &__buttons {
     @include laptop {
       display: none;
     }
+  }
+
+  &__lang {
+    position: relative;
 
     & .lang {
       position: absolute;

@@ -1,13 +1,9 @@
 .navigation {
-  color: $white;
 
   @include laptop {
+    width: 100%;
     display: flex;
-    gap: 80px;
-  }
-
-  @include desktop {
-    gap: 200px;
+    justify-content: space-between;
   }
 
   &__lang {
@@ -15,8 +11,8 @@
     position: relative;
 
     @include laptop {
-      order: 2;
       padding: 0;
+      order: 1;
     }
 
     & .lang {
@@ -25,9 +21,18 @@
       left: 10px;
 
       @include laptop {
-        top: -8px;
-        right: 0;
+        top: -7px;
+        right: -56px;
         left: auto;
+        z-index: 1;
+        padding: 20px 10px;
+      }
+    }
+
+    & .lang:hover {
+      @include laptop {
+        top: 7px;
+        padding: 5px 10px;
       }
     }
   }
@@ -41,12 +46,10 @@
       padding: 0;
       border-top: 0;
       border-bottom: 0;
-      margin-right: 140px;
+      margin-left: 10%;
+      flex-grow: 1;
     }
 
-    @include laptop {
-      margin-right: 200px;
-    }
   }
 
   &__contact {
@@ -60,6 +63,7 @@
   }
 
   &__address {
+    color: $white;
     font-weight: 600;
     padding: 0px 25px;
     margin-top: 40px;
@@ -78,4 +82,48 @@
       display: none;
     }
   }
+
+  &__search {
+    margin: 20px;
+    margin-top: 0;
+
+    @include laptop {
+      order: 2;
+      margin: 0;
+    }
+  }
+
+  &__search .search-field {
+    width: 288px;
+    height: 44px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.10);
+
+    @include laptop {
+      border: 1px solid transparent;
+      border-radius: 0;
+      background-color: transparent;
+      width: 360px;
+      height: 55px;
+      transition: $transition;
+    }
+
+    @include desktop {
+      width: 500px;
+    }
+  }
+
+  &__search .search-field:hover,
+  &__search .search-field:focus {
+
+    @include laptop {
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      background-color: #3C3B3B;
+      position: relative;
+      z-index: 3;
+    }
+
+  }
+
 }

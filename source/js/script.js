@@ -10,9 +10,9 @@ for (i = 0; i < burger.length; i++) {
 };
 
 
-let scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 400
-});
+// let scroll = new SmoothScroll('a[href*="#"]', {
+//   speed: 400
+// });
 
 
 window.onscroll = function() {myFunction()};
