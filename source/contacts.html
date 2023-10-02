@@ -20,9 +20,7 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <a class="header__logo" href="/">
-        <img src="img/logo.svg" height="28" alt="red stone">
-      </a>
+      <img src="img/logo.svg" height="28" alt="red stone">
       <div class="header__buttons">
         <div class="header__lang">
           <ul class="clear-list lang">
@@ -51,6 +49,15 @@
             </li>
           </ul>
         </div>
+        <div class="navigation__search">
+          <form role="search" method="get" class="search-form" action="https://redstone.id/">
+            <label>
+              <span class="screen-reader-text">Search for:</span>
+              <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+            </label>
+            <input type="submit" class="search-submit" value="Search">
+          </form>
+        </div>
         <ul class="clear-list navigation__menu header__menu main-menu">
           <li class="main-menu__item">
             <a class="main-menu__link js-burger" href="industries.html">Industries</a>
@@ -66,6 +73,9 @@
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link js-burger" href="partners.html">Partners</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link js-burger" href="news.html">News</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link js-burger" href="contacts.html">Contacts</a>

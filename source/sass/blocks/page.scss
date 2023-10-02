@@ -1,13 +1,5 @@
 .pages {
   background-color: $white;
-
-  &--about .contact {
-    padding-top: 60px;
-
-    @include laptop {
-      padding-top: 150px;
-    }
-  }
 }
 
 .home .header {
@@ -46,14 +38,6 @@
   & .news__title {
     color: $white;
     margin: 0;
-  }
-
-  & .contact {
-    padding-top: 0;
-
-    @include laptop {
-      padding-top: 30px;
-    }
   }
 
   & .solutions {

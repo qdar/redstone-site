@@ -17,11 +17,11 @@
   @include laptop {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 30px;
     font-size: 16px;
   }
 
   @include desktop {
-    gap: 78px;
+    gap: 50px;
   }
 }
